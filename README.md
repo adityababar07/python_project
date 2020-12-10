@@ -1,2 +1,2 @@
 # python_project
-pytthon project for practicles 2020
+python project for practicle 2020
