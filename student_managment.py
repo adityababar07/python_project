@@ -4,10 +4,10 @@ from tabulate import tabulate
 
 print("=======!!!! welcome !!!!======")
 
-# username = input("Enter your username :\t")
-username = "administrator"
-# password = input(f"Enter your password {username} :\t")
-password = "administrator"
+username = input("Enter your username :\t")
+# username = "administrator"
+password = input(f"Enter your password {username} :\t")
+# password = "administrator"
 
 def create_db_connection(host_name, user_name, password, database):
     try:
