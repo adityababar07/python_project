@@ -1,7 +1,18 @@
 import mysql.connector 
 from mysql.connector import Error
 from tabulate import tabulate
+import tkinter as tk
 
+class StudentUi:
+
+    def __init__(self, name, address, number, gender, age):
+        self.root = tk.Tk()
+        self.name = name
+        self.address = address
+        self.number = number
+        self.gender  = gender
+        self.age = age
+    
 print("=======!!!! welcome !!!!======")
 
 username = input("Enter your username :\t")
@@ -183,7 +194,7 @@ if username == "administrator" and password == "administrator":
     query0 = "CREATE DATABASE if not exists test;"
     query1 = '''
         CREATE TABLE if not exists student_master(
-        ID int Primary Key NOT NULL,
+        ID AUTO_INCREMENT int Primary Key NOT NULL,
         Name varchar(30) NOT NULL,
         Age int NOT NULL,
         Gender char(1) NOT NULL,
