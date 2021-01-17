@@ -1,18 +1,7 @@
 import mysql.connector 
 from mysql.connector import Error
 from tabulate import tabulate
-import tkinter as tk
 
-class StudentUi:
-
-    def __init__(self, name, address, number, gender, age):
-        self.root = tk.Tk()
-        self.name = name
-        self.address = address
-        self.number = number
-        self.gender  = gender
-        self.age = age
-    
 print("=======!!!! welcome !!!!======")
 
 username = input("Enter your username :\t")
@@ -62,7 +51,7 @@ def choice1():
     no_of_entries = int(input("Enter the number of entries you want to do :\t"))
 
     for _ in range(no_of_entries):
-        ID = int(input("Enter the id of the student :\t"))
+        #ID = int(input("Enter the id of the student :\t"))
         Name = input("Enter the name of the student :\t")
         Age = input("Enter the age of the student :\t")
         Gender = input("Enter the gender of the student (m/f/o) :\t")
@@ -70,9 +59,9 @@ def choice1():
         Phone_number = input("Enter the contact number of the student (eg: 9567896522) :\t")
         Email_address = input("Enter the email address of the student :\t")
     
-        cursor.execute('''INSERT INTO test.student_master (ID, Name, Age, Gender, Address, Phone_number, Email_address) VALUES (
-            %s, %s, %s, %s, %s, %s, %s 
-            ) ''', params = (ID, Name, Age, Gender, Address, Phone_number, Email_address))
+        cursor.execute('''INSERT INTO test.student_master (Name, Age, Gender, Address, Phone_number, Email_address) VALUES (
+            %s, %s, %s, %s, %s, %s 
+            ) ''', params = (Name, Age, Gender, Address, Phone_number, Email_address))
         mysqldb.commit()
     cursor.execute("SELECT * FROM test.student_master")
     rows = cursor.fetchall()
@@ -189,12 +178,12 @@ def options():
         print("The option you choosed is invalid . Plz choose a number from 1-4.")
         return options()
 
-if username == "administrator" and password == "administrator":
+if username == "root" and password == "toor":
     connection = create_db_connection("localhost", "hacker07", "admin1234", "test")
     query0 = "CREATE DATABASE if not exists test;"
     query1 = '''
         CREATE TABLE if not exists student_master(
-        ID AUTO_INCREMENT int Primary Key NOT NULL,
+        ID INT Primary Key AUTO_INCREMENT,
         Name varchar(30) NOT NULL,
         Age int NOT NULL,
         Gender char(1) NOT NULL,
@@ -202,7 +191,7 @@ if username == "administrator" and password == "administrator":
         Phone_number char(10) ,
         Email_address varchar(20) ,
         CONSTRAINT chk_stu CHECK (Age<=20 AND Gender in ('m','f','o'))
-        )
+        );
         '''
     create_db(connection, query0)
     execute_query(connection, query1)
