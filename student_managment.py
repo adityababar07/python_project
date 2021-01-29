@@ -16,7 +16,7 @@ def create_db_connection(host_name, user_name, password, database):
             host=host_name,
             user=user_name,
             passwd=password,
-            db = database
+            db = database 
         )
         print("Database connection succesfull.")
     except Error as err:
@@ -146,6 +146,46 @@ def choice4():
     else:
         print("Countinue ....")
 
+def choice5():
+    connection = create_db_connection("localhost", "hacker07", "admin1234", "test")
+    query0 = "CREATE DATABASE if not exists test;"
+    query1 = '''
+        CREATE TABLE if not exists admin_master(
+        ID INT Primary Key AUTO_INCREMENT,
+        Name varchar(30) NOT NULL,
+        Age int NOT NULL,
+        Gender char(1) NOT NULL,
+        Address varchar(50) NOT NULL, 
+        Phone_number char(10) ,
+        Email_address varchar(20) ,
+        Password Varchar(50) NOT NULL
+        );
+        '''
+    create_db(connection, query0)
+    execute_query(connection, query1)
+    while True:
+        admin_username = input("enter the username of the admin user")
+        Name = input("Enter the name of the admin_user :\t")
+        Age = input("Enter the age of the admin_user :\t")
+        Gender = input("Enter the gender of the admin_user (m/f/o) :\t")
+        Address = input("Enter the address of the admin_user :\t")
+        Phone_number = input("Enter the contact number of the admin_user (eg: 9567896522) :\t")
+        Email_address = input("Enter the email address of the admin_user :\t")
+        admin_password = input("enter the password for the admin user")
+        comfirm_admin_password = input("enter the password for the admin user")
+
+        if admin_password == comfirm_admin_password:
+            cursor.execute('''INSERT INTO test.admin_master (Name, Age, Gender, Address, Phone_number, Email_address, Password) VALUES (
+            %s, %s, %s, %s, %s, %s, %s ,
+            ) ''', params = (Name, Age, Gender, Address, Phone_number, Email_address, comfirm_admin_password))
+            mysqldb.commit()
+            cursor.execute("SELECT * FROM test.admin_master")
+            print(f"{admin_username} added to the the database.")
+            break
+
+        else:
+            print(f"The password do not match, plz try again!!!")
+
 def options():
     print('''
   ====!!! APPASAHEB BIRNALE PUBLIC SCHOOL !!! ====
@@ -155,7 +195,8 @@ def options():
     |   2. Search student details              |
     |   3. Update student details              |
     |   4. Delete student details              |
-    |   5. Enter 'q' to exit                   |
+    |   5. Add administrator user              |
+    |   6. Enter 'q' to exit                   |
     ============================================
     ''')
     choice = input("Enter the option you want from 1-4 :\t")
@@ -169,7 +210,10 @@ def options():
         choice3()
 
     elif choice == "4":
-        choice4()            
+        choice4()  
+    
+    elif choice == "5":
+        choice5()      
 
     elif choice == "q":
         exit()
@@ -197,3 +241,7 @@ if username == "root" and password == "toor":
     execute_query(connection, query1)
     while True:
         options()
+
+else:
+    print("\nPasswords credentials are wrong.\n"*2)
+    print("Sorry!!! Plz check your username and password once again.")
