@@ -2,6 +2,7 @@
 python project for practicle 2020
 
 <h3>
+$ git clone https://github.com/adityababar07/python_project.git
 <b>student_managment.py is the main file.</b>
 <b>Install mysql in linux using :- </b>
 <i> $ sudo apt-get install mariadb-server</i>
