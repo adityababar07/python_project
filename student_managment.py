@@ -204,7 +204,7 @@ def choice5():
         Email_address = input("Enter the email address of the admin_user :\t")
         admin_password = input("enter the password for the admin user :\t")
         comfirm_admin_password = input(
-            "enter the password for the admin user :\t")
+            "Comfirm the password for the admin user :\t")
 
         if admin_password == comfirm_admin_password:
             cursor.execute('''INSERT INTO test.admin_master (Username, Name, Age, Gender, Address, Phone_number, Email_address, Password) VALUES (

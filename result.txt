@@ -1,0 +1,306 @@
+(python_project) ┌─[hacker07@parrot]─[/media/hacker07/0876-1B06/aditya_babar/python_project]
+└──╼ $python student_managment.py
+=======!!!! welcome !!!!======
+Enter your username :   hacker07
+Enter your password hacker07 :  149489
+Database connection succesfull.
+Database created successfully.
+149489
+Database connection succesfull.
+Database created successfully.
+Table created successfully.
+
+  ====!!! APPASAHEB BIRNALE PUBLIC SCHOOL !!! ====
+
+    ============================================
+    |   1. Insert student details              |
+    |   2. Search student details              |
+    |   3. Update student details              |
+    |   4. Delete student details              |
+    |   5. Add administrator user              |
+    |   6. Enter 'q' to exit                   |
+    ============================================
+    
+Enter the option you want from 1-4 :    1
+Enter the number of entries you want to do :    2
+Enter the name of the student : sairaj
+Enter the age of the student :  17
+Enter the gender of the student (m/f/o) :       m
+Enter the address of the student :      sangli 
+Enter the contact number of the student (eg: 9567896522) :      745689123
+Enter the email address of the student :        sai@gmail.com
+Enter the name of the student : aditya
+Enter the age of the student :  17
+Enter the gender of the student (m/f/o) :       m
+Enter the address of the student :      bedag
+Enter the contact number of the student (eg: 9567896522) :      7458961425
+Enter the email address of the student :        adi@gmail.com
+
+   ID  Name       Age  Gender    Address      Phone_number  Email_address
+----  -------  -----  --------  ---------  --------------  ----------------
+   4  aditya      16  m         sangli         0123456789  aditya@gmail.com
+   5  avinash     17  m         miraj          7894561230  avinah@gmail.com
+   6  ak          17  f         sd                     74  df
+   7  sairaj      17  m         sangli          745689123  sai@gmail.com
+   8  aditya      17  m         bedag          7458961425  adi@gmail.com 
+
+
+  ====!!! APPASAHEB BIRNALE PUBLIC SCHOOL !!! ====
+
+    ============================================
+    |   1. Insert student details              |
+    |   2. Search student details              |
+    |   3. Update student details              |
+    |   4. Delete student details              |
+    |   5. Add administrator user              |
+    |   6. Enter 'q' to exit                   |
+    ============================================
+    
+Enter the option you want from 1-4 :    2
+
+        How do you want to search for the student details ?
+        You can choose the options from the list given below :-
+
+        =====================================================
+        |   1. ID                                           |
+        |   2. Name                                         |
+        |   3. Age                                          |
+        |   4. Gender                                       |
+        |   5. Address(city)                                |
+        =====================================================
+        
+Enter your option here :        1
+Enter the id of the student you want to search :        5
+
+   ID  Name       Age  Gender    Address      Phone_number  Email_address
+----  -------  -----  --------  ---------  --------------  ----------------
+   5  avinash     17  m         miraj          7894561230  avinah@gmail.com 
+
+
+  ====!!! APPASAHEB BIRNALE PUBLIC SCHOOL !!! ====
+
+    ============================================
+    |   1. Insert student details              |
+    |   2. Search student details              |
+    |   3. Update student details              |
+    |   4. Delete student details              |
+    |   5. Add administrator user              |
+    |   6. Enter 'q' to exit                   |
+    ============================================
+    
+Enter the option you want from 1-4 :    2
+
+        How do you want to search for the student details ?
+        You can choose the options from the list given below :-
+
+        =====================================================
+        |   1. ID                                           |
+        |   2. Name                                         |
+        |   3. Age                                          |
+        |   4. Gender                                       |
+        |   5. Address(city)                                |
+        =====================================================
+        
+Enter your option here :        2
+Enter the name of the student you want to search :      aditya
+
+   ID  Name      Age  Gender    Address      Phone_number  Email_address
+----  ------  -----  --------  ---------  --------------  ----------------
+   4  aditya     16  m         sangli         0123456789  aditya@gmail.com
+   8  aditya     17  m         bedag          7458961425  adi@gmail.com 
+
+
+  ====!!! APPASAHEB BIRNALE PUBLIC SCHOOL !!! ====
+
+    ============================================
+    |   1. Insert student details              |
+    |   2. Search student details              |
+    |   3. Update student details              |
+    |   4. Delete student details              |
+    |   5. Add administrator user              |
+    |   6. Enter 'q' to exit                   |
+    ============================================
+    
+Enter the option you want from 1-4 :    2
+
+        How do you want to search for the student details ?
+        You can choose the options from the list given below :-
+
+        =====================================================
+        |   1. ID                                           |
+        |   2. Name                                         |
+        |   3. Age                                          |
+        |   4. Gender                                       |
+        |   5. Address(city)                                |
+        =====================================================
+        
+Enter your option here :        3
+Enter the age of the student you want to search :       17
+
+   ID  Name       Age  Gender    Address      Phone_number  Email_address
+----  -------  -----  --------  ---------  --------------  ----------------
+   5  avinash     17  m         miraj          7894561230  avinah@gmail.com
+   6  ak          17  f         sd                     74  df
+   7  sairaj      17  m         sangli          745689123  sai@gmail.com
+   8  aditya      17  m         bedag          7458961425  adi@gmail.com 
+
+
+  ====!!! APPASAHEB BIRNALE PUBLIC SCHOOL !!! ====
+
+    ============================================
+    |   1. Insert student details              |
+    |   2. Search student details              |
+    |   3. Update student details              |
+    |   4. Delete student details              |
+    |   5. Add administrator user              |
+    |   6. Enter 'q' to exit                   |
+    ============================================
+    
+Enter the option you want from 1-4 :    2
+
+        How do you want to search for the student details ?
+        You can choose the options from the list given below :-
+
+        =====================================================
+        |   1. ID                                           |
+        |   2. Name                                         |
+        |   3. Age                                          |
+        |   4. Gender                                       |
+        |   5. Address(city)                                |
+        =====================================================
+        
+Enter your option here :        4
+Enter the gender of the student you want to search :    m
+
+   ID  Name       Age  Gender    Address      Phone_number  Email_address
+----  -------  -----  --------  ---------  --------------  ----------------
+   4  aditya      16  m         sangli         0123456789  aditya@gmail.com
+   5  avinash     17  m         miraj          7894561230  avinah@gmail.com
+   7  sairaj      17  m         sangli          745689123  sai@gmail.com
+   8  aditya      17  m         bedag          7458961425  adi@gmail.com 
+
+
+  ====!!! APPASAHEB BIRNALE PUBLIC SCHOOL !!! ====
+
+    ============================================
+    |   1. Insert student details              |
+    |   2. Search student details              |
+    |   3. Update student details              |
+    |   4. Delete student details              |
+    |   5. Add administrator user              |
+    |   6. Enter 'q' to exit                   |
+    ============================================
+    
+Enter the option you want from 1-4 :    2
+
+        How do you want to search for the student details ?
+        You can choose the options from the list given below :-
+
+        =====================================================
+        |   1. ID                                           |
+        |   2. Name                                         |
+        |   3. Age                                          |
+        |   4. Gender                                       |
+        |   5. Address(city)                                |
+        =====================================================
+        
+Enter your option here :        5
+Enter the address of the student you want to search :   sangli
+
+   ID  Name      Age  Gender    Address      Phone_number  Email_address
+----  ------  -----  --------  ---------  --------------  ----------------
+   4  aditya     16  m         sangli         0123456789  aditya@gmail.com
+   7  sairaj     17  m         sangli          745689123  sai@gmail.com 
+
+
+  ====!!! APPASAHEB BIRNALE PUBLIC SCHOOL !!! ====
+
+    ============================================
+    |   1. Insert student details              |
+    |   2. Search student details              |
+    |   3. Update student details              |
+    |   4. Delete student details              |
+    |   5. Add administrator user              |
+    |   6. Enter 'q' to exit                   |
+    ============================================
+    
+Enter the option you want from 1-4 :    3
+Enter the id of the student who's details you want to update :  7
+  ID  Name      Age  Gender    Address      Phone_number  Email_address
+----  ------  -----  --------  ---------  --------------  ---------------
+   7  sairaj     17  m         sangli          745689123  sai@gmail.com 
+
+Enter the column name you want to update :      Name
+Enter the new data you want to insert : Sairaj Sonawane       
+  ID  Name               Age  Gender    Address      Phone_number  Email_address
+----  ---------------  -----  --------  ---------  --------------  ---------------
+   7  Sairaj Sonawane     17  m         sangli          745689123  sai@gmail.com 
+
+
+  ====!!! APPASAHEB BIRNALE PUBLIC SCHOOL !!! ====
+
+    ============================================
+    |   1. Insert student details              |
+    |   2. Search student details              |
+    |   3. Update student details              |
+    |   4. Delete student details              |
+    |   5. Add administrator user              |
+    |   6. Enter 'q' to exit                   |
+    ============================================
+    
+Enter the option you want from 1-4 :    4
+Enter the id of the student who's details you want to delete from the database :        4
+  ID  Name      Age  Gender    Address      Phone_number  Email_address
+----  ------  -----  --------  ---------  --------------  ----------------
+   4  aditya     16  m         sangli         0123456789  aditya@gmail.com 
+
+Do you want to delete the data of the particular student ('y'/'n') :    y
+
+   ID  Name               Age  Gender    Address      Phone_number  Email_address
+----  ---------------  -----  --------  ---------  --------------  ----------------
+   5  avinash             17  m         miraj          7894561230  avinah@gmail.com
+   6  ak                  17  f         sd                     74  df
+   7  Sairaj Sonawane     17  m         sangli          745689123  sai@gmail.com
+   8  aditya              17  m         bedag          7458961425  adi@gmail.com 
+
+
+  ====!!! APPASAHEB BIRNALE PUBLIC SCHOOL !!! ====
+
+    ============================================
+    |   1. Insert student details              |
+    |   2. Search student details              |
+    |   3. Update student details              |
+    |   4. Delete student details              |
+    |   5. Add administrator user              |
+    |   6. Enter 'q' to exit                   |
+    ============================================
+    
+Enter the option you want from 1-4 :    5
+Database connection succesfull.
+Database created successfully.
+Table created successfully.
+enter the username of the admin user :  admin
+Enter the name of the admin_user :      administrator
+Enter the age of the admin_user :       23
+Enter the gender of the admin_user (m/f/o) :    f
+Enter the address of the admin_user :   sangli
+Enter the contact number of the admin_user (eg: 9567896522) :   7485961425
+Enter the email address of the admin_user :     admin@gmail.com
+enter the password for the admin user : admin@1234
+enter the password for the admin user : admin@1234
+admin added to the the database.
+
+  ====!!! APPASAHEB BIRNALE PUBLIC SCHOOL !!! ====
+
+    ============================================
+    |   1. Insert student details              |
+    |   2. Search student details              |
+    |   3. Update student details              |
+    |   4. Delete student details              |
+    |   5. Add administrator user              |
+    |   6. Enter 'q' to exit                   |
+    ============================================
+    
+Enter the option you want from 1-4 :    q
+(python_project) ┌─[hacker07@parrot]─[/media/hacker07/0876-1B06/aditya_babar/python_project]
+└──╼ $
