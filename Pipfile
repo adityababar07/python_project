@@ -8,6 +8,10 @@ pylint = "*"
 autopep8 = "*"
 
 [packages]
+"mysql.connector" = "*"
+pylint = "*"
+autopep8 = "*"
+tabulate = "*"
 
 [requires]
 python_version = "3.8"
